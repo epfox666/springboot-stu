@@ -1,0 +1,30 @@
+person:
+  last-name: epfox${random.uuid}
+  age: ${random.int}
+  lists:
+    - aaa
+    - bbb
+    - ccc
+  maps: {a: 1, b: 2}
+  marry: false
+  birth: 2000/01/01
+  hello: 123
+  dog:
+    name: ${person.hello:other}_旺财
+    age: 3
+
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8081
+spring:
+  profiles: test
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
