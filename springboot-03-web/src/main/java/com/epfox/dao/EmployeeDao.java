@@ -3,12 +3,14 @@ package com.epfox.dao;
 import com.epfox.pojo.Department;
 import com.epfox.pojo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 //员工dao
+@Repository
 public class EmployeeDao {
 
     //模拟数据库中的数据
